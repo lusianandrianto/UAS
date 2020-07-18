@@ -1,36 +1,12 @@
-<html>
-<head>
-<body>
 	<h2>Pemrograman Web 2</h2>
 	<h2>UAS Lusian Andrianto/206142055/06TPLM009</h2>
 	<br/>
- 
-	<?php 
-
-
-	?>
- 
-
- 
-	<br/>
-	<br/>
- 
-	<a href="logout.php">LOGOUT</a>
- 
- 
-</body>
-</html>
-<html>
-<head>
-	<title>UTS Lusian Andrianto 2016142055</title>
-	
-</head>
 <?php
 include "koneksi.php";
 
 echo "<br>";
 echo "<p align=center>";
-echo "Data Pemantauan Covid19 Wilayah Pulau Jawa";
+echo "Data Pemantauan Covid19 Wilayah Banten";
 echo "<br>";
 echo "Per " . date('l,d-m-Y H:i:s a') . "";
 echo "<br>";
@@ -42,10 +18,14 @@ echo "<br>Lusian Andrianto / 2016142055";
        <title>UAS Lusian Andrianto/2016142055</title>
 </head>
 <body>
-<br>
-<br>
-  <a href="cetak1.php" target="_WINDOW">Cetak pdf</a>
-  
+	
+<br/>
+	<br/>
+ 
+	<a href="logout.php">LOGOUT</a>
+	<br>
+	<a href="cetak1.php" target="_WINDOW">Cetak pdf</a>
+	
     <table border="1" width="900" align="center">
        <thead>
        <tr>
@@ -77,7 +57,6 @@ while($a=mysqli_fetch_array($ambildata)){
            <td><a href="edit.php?id=<?php echo $a['no_id'];?>" title="edit data"><button>Edit</button></a> |
            <a href="hapus.php?id=<?php echo $a['no_id'];?>" title="edit data"><button>Hapus</button></a></td>
        </tr>
-	   
 <?php
 }
 ?>
